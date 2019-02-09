@@ -1,0 +1,64 @@
+{
+    "name": "Tdoc",
+    "common": {
+        "title": "Tdoc",
+        "footer": "Made By YonYouFED. © 2014 - 2016",
+        "home": "tinper",
+        "homeUrl": "http://tinper.org/",
+        "navbars": []
+    },
+    "options": {
+        "markdown": {
+            "menuLevel": 2
+        }
+    },
+    "pages": [{
+        "name": "index",
+        "title": "开始",
+        "banner": {
+            "title": "Tdoc",
+            "description": "开始"
+        },
+        "content": "./doc/index.md"
+    }, {
+        "name": "usage",
+        "title": "使用",
+        "banner": {
+            "title": "Tdoc",
+            "description": "使用"
+        },
+        "content": "./doc/usage.md"
+    }, {
+        "name": "config",
+        "title": "配置",
+        "banner": {
+            "title": "Tdoc",
+            "description": "配置"
+        },
+        "content": "./doc/config.md"
+    }, {
+        "name": "component",
+        "title": "组件",
+        "banner": {
+            "title": "移动端组件",
+            "description": "组件"
+        },
+        "content": { 
+            "sidebar": true, 
+            "multi": true,
+            "index": "./doc/index.md", 
+            "pages": [{
+                "name": "ListView",
+                "index": "list", 
+                "content": "./doc/config.md"
+            }, {
+                "name": "ScrollView",
+                "content": "./doc/usage.md"
+            }]
+        }
+    }, {
+        "name":"FAQ",
+        "title":"FAQ",
+        "url": "https://github.com/iuap-design/tdoc/issues"
+    }]
+}

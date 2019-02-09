@@ -1,0 +1,99 @@
+## 配置文件
+
+配置文件以 `edoc.config` 的形式出现。
+
+### 文件形式
+
+`edoc.config` 的内容是 `JSON`，支持注释。
+
+示例：
+
+```
+{
+    "name": "edoc",
+     ...
+}
+```
+
+## 配置内容
+
+### 整体配置说明
+
+示例:
+
+```json
+{
+    "name": "edoc",
+    "dest": "path/to/destination", // 默认为  "_docs"
+    "examplePath": "./examples", // 示例代码路径 默认 "./"
+    "template": "path/to/templte", // 默认使用 edoc 内置的模板
+    "options": { // 通用编译器配置
+        "markdwon": { // 对于 markdown 编译器进行统一配置
+            "memuLevel": 2
+        }
+    },
+    "common": { // 通用配置，包括主页配置等
+        "title": "edoc",
+        "footer": "Made By ELVNS Team. © 2019",
+        "home": "ELVNS",
+        "homeUrl": "http://www.eparty360.com/",
+        "navbars": [{ // 导航栏配置
+            "name": "edoc",
+            "url": "http://www.eparty360.com/edoc/"
+        }]
+    },
+    "pages": [{
+        "name": "index", // Page Name 会根据他生成 html 文件，例  index.html
+        "title": "开始", // Page Title
+        "banner": { // Banner 配置
+            "title": "edoc",
+            "description": "开始"
+        },
+        "content": "./README.md",  // 内容
+        "options": { // 此 Page 用的编译器的配置
+            "menuLevel": 2
+        }
+    }, {
+        "name": "hybird",
+        "title": "混合开发",
+        "intro": "document/README.md", // 介绍
+        "content": { // 单页多模块配置
+            "sidebar": true, // 是否显示侧边目录
+            "blocks": [{
+                "name": "简介", // 标题
+                "content": "document/hybrid/README.md" // 内容
+            }, {
+                "name": "Hybrid" // 只有标题，做目录和分割用
+            }, {
+                "name": "说明",
+                "sub": true, // 标题在目录里已子目录形式显示
+                "content": "modules/hybrid/framework/README.md"
+            }]
+        }
+    }, {
+        "name": "component",
+        "title": "组件",
+        "banner": {
+            "title": "移动端组件",
+            "description": "组件"
+        },
+        "content": { // 多页配置，multi 为 true
+            "sidebar": true, //是否显示侧边目录
+            "multi": true, // 多页配置
+            "index": "./Libraries/extension/INTRO.md", // 首页配置
+            "pages": [{ // 每页配置
+                "name": "ListView",
+                "index": "list", // 修改默认路径名
+                "content": "./Libraries/extension/libs/ListView/QListView.js"
+            }, {
+                "name": "ScrollView",
+                "content": "./Libraries/extension/libs/ScrollView/ScrollView.js"
+            }]
+        }
+    }, {
+        "name":"FAQ",
+        "title":"FAQ",
+        "url": "https://github.com/iuap-design/tdoc/issues"
+    }]
+}
+```

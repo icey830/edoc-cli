@@ -1,0 +1,44 @@
+{
+    "name": "Edoc",
+    "common": {
+        "title": "Edoc",
+        "footer": "Made By ELVNS. © 2019",
+        "home": "ELVNS",
+        "homeUrl": "http://www.eparty360.com/",
+        "navbars": []
+    },
+    "options": {
+        "markdown": {
+            "menuLevel": 2
+        }
+    },
+    "pages": [{
+        "name": "index",
+        "title": "开始",
+        "banner": {
+            "title": "Edoc",
+            "description": "开始"
+        },
+        "content": "./doc/index.md"
+    }, {
+        "name": "usage",
+        "title": "使用",
+        "banner": {
+            "title": "Edoc",
+            "description": "使用"
+        },
+        "content": "./doc/usage.md"
+    }, {
+        "name": "config",
+        "title": "配置",
+        "banner": {
+            "title": "Edoc",
+            "description": "配置"
+        },
+        "content": "./doc/config.md"
+    }, {
+        "name":"FAQ",
+        "title":"FAQ",
+        "url": "https://github.com/iuap-design/tdoc/issues"
+    }]
+}
