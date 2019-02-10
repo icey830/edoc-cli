@@ -4,7 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/tdoc-cli.svg)](http://badge.fury.io/js/doc-cli)
 
-![](https://nodei.co/npm/edoc-cli.png?downloads=true&downloadRank=true&stars=true)
+![](https://github.com/icey830/edoc-cli/blob/master/edoc.jpg?raw=true)
 
 ## 安装
 

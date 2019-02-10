@@ -93,7 +93,7 @@
     }, {
         "name":"FAQ",
         "title":"FAQ",
-        "url": "https://github.com/iuap-design/tdoc/issues"
+        "url": "https://github.com/icey830/edoc/issues"
     }]
 }
 ```

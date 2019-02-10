@@ -1,7 +1,7 @@
 {
-    "name": "Tdoc",
+    "name": "Edoc",
     "common": {
-        "title": "Tdoc",
+        "title": "Edoc",
         "footer": "Made By YonYouFED. © 2014 - 2016",
         "home": "tinper",
         "homeUrl": "http://tinper.org/",
@@ -16,7 +16,7 @@
         "name": "index",
         "title": "开始",
         "banner": {
-            "title": "Tdoc",
+            "title": "Edoc",
             "description": "开始"
         },
         "content": "./doc/index.md"

@@ -63,13 +63,13 @@ var cli = module.exports = {
                     }
                 });
             } else if (cmd == 'init') {
-                tdoc.init(cwd, {
+                edoc.init(cwd, {
                     template: argv.t || argv.template
                 });
             } else if (cmd == 'new') {
-                tdoc["new"](cwd);
+                edoc["new"](cwd);
             } else if (cmd == 'server') {
-                tdoc.server(cwd);
+                edoc.server(cwd);
             }
         } else {
             console.log('X 命令不存在！'.red);
@@ -77,8 +77,8 @@ var cli = module.exports = {
     },
     help: function help() {
         helpTitle();
-        for (var key in tdoc.actions) {
-            console.info(' ' + fixempty(key, 15) + ' # ' + (tdoc.actions[key].usage || ''));
+        for (var key in edoc.actions) {
+            console.info(' ' + fixempty(key, 15) + ' # ' + (edoc.actions[key].usage || ''));
         }
         console.info('');
         console.info(' 如果需要帮助, 请使用 edoc {命令名} --help ');

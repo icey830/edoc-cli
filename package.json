@@ -18,16 +18,16 @@
  "author": "",
  "repository": {
   "type": "git",
-  "url": "git+https://github.com/icey830/edoc.git"
+  "url": "git+https://github.com/icey830/edoc-cli.git"
  },
  "license": "ISC",
  "bugs": {
-  "url": "https://github.com/icey830/edoc/issues"
+  "url": "https://github.com/icey830/edoc-cli/issues"
  },
  "engines": {
   "node": ">=4"
  },
- "homepage": "https://github.com/icey830/edoc#readme",
+ "homepage": "https://github.com/icey830/edoc-cli#readme",
  "dependencies": {
   "art-template": "^3.0.3",
   "atropa-jsformatter": "^0.1.2",
